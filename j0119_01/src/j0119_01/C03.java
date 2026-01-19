@@ -7,9 +7,32 @@ public class C03 {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
+		
+		// 예제)숫자 5개를 입력, 합계 출력. 12345=15
 		System.out.println("숫자를 입력하시오>>");
-		int num = scanner.nextInt();
-		System.out.println("숫자 : "+num);
+		String num = scanner.next();
+		char ch1 = num.charAt(0);
+		char ch2 = num.charAt(1);
+		char ch3 = num.charAt(2);
+		char ch4 = num.charAt(3);
+		char ch5 = num.charAt(4);
+		System.out.printf("%s + %s + %s + %s + %s\n",ch1,ch2,ch3,ch4,ch5);
+		System.out.printf("=%d\n",(ch1-'0')+(ch2-'0')+(ch3-'0')+(ch4-'0')+(ch5-'0'));
+		
+		
+//		// 1+3=4
+//		System.out.println("숫자를 입력하시오>>");
+//		String num = scanner.next();
+//		char ch1 = num.charAt(0);
+//		char ch2 = num.charAt(1);
+//		System.out.println(ch1+","+ch2);
+//		System.out.printf("결과값: %d\n",(ch1-'0')+(ch2-'0'));
+		
+//		System.out.println("숫자1를 입력하시오>>");
+//		int num1 = scanner.nextInt();
+//		System.out.println("숫자2를 입력하시오>>");
+//		int num2 = scanner.nextInt();
+//		System.out.printf("숫자1:%d, 숫자2:%d",num1,num2);
 		
 		
 		scanner.close();
