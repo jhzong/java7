@@ -6,11 +6,12 @@ public class C04 {
 
 	public static void main(String[] args) {
 
-		//학생성적-이름,국어,영어,수학,합계
+		//학생성적-이름,국어,영어,수학,합계,평균
 		Scanner scanner = new Scanner(System.in);
 		String[] name = new String[2];
 		int[][] score = new int[2][4];
-		String[] title = {"이름","국어","영어","수학","합계"};
+		double[] avg = new double[2];
+		String[] title = {"이름","국어","영어","수학","합계","평균"};
 		
 		System.out.println("           [성적입력 프로그램]              ");
 		System.out.println("---------------------------------------");
@@ -26,8 +27,10 @@ public class C04 {
 				total += score[i][j];
 			}
 			score[i][3] = total;
+			avg[i]=total/3.0;
 			i++;
 		}
+		scanner.close();
 		
 		//2.성적출력
 		System.out.println("              [성적출력]                ");
@@ -39,12 +42,15 @@ public class C04 {
 		System.out.println();
 		System.out.println("---------------------------------------");
 		
+		//이름,국어,영어,수학,합계,평균
 		for(int j=0;j<score.length;j++) {
+			//이름
 			System.out.print(name[j]+"\t");
 			for(int k=0;k<score[j].length;k++) {
+				//국어,영어,수학,합계
 				System.out.print(score[j][k]+"\t");
 			}
-			System.out.println();
+			System.out.printf("%.2f\n",avg[j]);
 		}
 		
 		
@@ -76,7 +82,7 @@ public class C04 {
 //		for(int i=0;i<score.length;i++) {
 //			for(int j=0;j<score[i].length;j++) {
 //				score[i][j]=a[5*i+j];//0~24
-////				score[i][j]=5*i+j+1;//1~25
+//				score[i][j]=5*i+j+1;//1~25
 //			}
 //		}
 //		
