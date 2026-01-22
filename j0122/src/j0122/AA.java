@@ -2,7 +2,12 @@ package j0122;
 
 public class AA {
 	
-	int a;
-	int b;
-	int c;
+	static void change() {
+		
+		int result;
+		int result2;
+		int result3;
+		double result4;
+	
+	}
 }
