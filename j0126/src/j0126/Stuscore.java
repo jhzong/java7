@@ -26,5 +26,13 @@ public class Stuscore {
 	int math;
 	int total;
 	double avg;
+	
+	public void calTotal(int kor,int eng,int math) {
+		this.total = kor+eng+math;
+	}
+	
+	public void calAvg(int kor,int eng,int math) {
+		this.avg = this.total/3.0;
+	}
 
 }
