@@ -6,7 +6,7 @@ public class C03 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		StuDeck s =  new StuDeck();
+		StuDeck s = new StuDeck();
 		loop:while (true) {
 			s.screen_print();
 			int choice = scan.nextInt();

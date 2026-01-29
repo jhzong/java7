@@ -1,12 +1,14 @@
-package j0129;
+package j0129_02;
 
 public class Stuscore {
-
+	
 	{
 		count++;
 		no = count;
 	}
-	Stuscore(){};
+	
+	Stuscore(){}
+	
 	Stuscore(String name,int kor,int eng,int math){
 		this.name = name;
 		this.kor = kor;
@@ -14,24 +16,15 @@ public class Stuscore {
 		this.math = math;
 		this.total = kor+eng+math;
 		this.avg = (kor+eng+math)/3.0;
-	};
-	
-//	@Override
-//	public boolean equals(Object obj) {
-//		Stuscore s = (Stuscore)obj;
-//		if(this.name.equals(s.getName())) {
-//			return true;
-//		}
-//		return false;
-//	}
+	}
 	
 	@Override
 	public String toString() {
 		return String.format("%d\t%s\t%d\t%d\t%d\t%d\t%.2f",
-					this.no,this.name,this.kor,this.eng,
-					this.math,this.total,this.avg);
+				this.no,this.name,this.kor,this.eng,
+				this.math,this.total,this.avg);
 	}
-	
+
 	static int count;
 	private int no;
 	private String name;
@@ -40,15 +33,6 @@ public class Stuscore {
 	private int math;
 	private int total;
 	private double avg;
-	
-	public void calTotal(int kor,int eng,int math) {
-		this.total = kor+eng+math;
-	}
-	
-	public void calAvg(int kor,int eng,int math) {
-		this.avg = (kor+eng+math)/3.0;
-	}
-	
 	public int getNo() {
 		return no;
 	}
@@ -93,5 +77,4 @@ public class Stuscore {
 	}
 	
 	
-
 }
