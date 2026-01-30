@@ -2,7 +2,7 @@ package j0129;
 
 import java.util.Scanner;
 
-public class C03 {
+public class StuMain {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -17,6 +17,14 @@ public class C03 {
 			
 			case 2:
 				s.stu_output();// 성적출력
+				break;
+			
+			case 3:
+				s.stu_edit();// 성적수정
+				break;
+			
+			case 4:
+				s.stu_delete();// 성적삭제
 				break;
 
 			case 0:
