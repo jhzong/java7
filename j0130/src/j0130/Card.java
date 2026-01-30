@@ -11,4 +11,9 @@ public class Card {
 	int number;
 	String kind;
 	
+	@Override//어노테이션(주석)
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
 }
