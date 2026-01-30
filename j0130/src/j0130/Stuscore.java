@@ -11,8 +11,22 @@ public class Stuscore {
 		this.kor = kor;
 		this.eng = eng;
 		this.math = math;
+		this.total = kor+eng+math;
+		this.avg = (kor+eng+math)/3.0;
 	}
 	
+	
+	public Stuscore(int no, String name, int kor, int eng, int math, int total, double avg) {
+		this.no = no;
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+		this.total = total;
+		this.avg = avg;
+	}
+
+
 	static int count;
 	private int no;
 	private String name;
@@ -21,6 +35,7 @@ public class Stuscore {
 	private int math;
 	private int total;
 	private double avg;
+	
 	public int getNo() {
 		return no;
 	}
