@@ -1,12 +1,14 @@
-package j0130;
+package j0130_02;
 
-public class Stuscore {
+public class StuScore {
 	{
 		count++;
 		no=count;
 	}
-	Stuscore(){}
-	Stuscore(String name,int kor,int eng,int math){
+	
+	StuScore(){}
+	
+	StuScore(String name,int kor,int eng,int math){
 		this.name = name;
 		this.kor = kor;
 		this.eng = eng;
@@ -15,8 +17,7 @@ public class Stuscore {
 		this.avg = (kor+eng+math)/3.0;
 	}
 	
-	
-	public Stuscore(int no, String name, int kor, int eng, int math, int total, double avg) {
+	public StuScore(int no, String name, int kor, int eng, int math, int total, double avg) {
 		this.no = no;
 		this.name = name;
 		this.kor = kor;
@@ -26,7 +27,6 @@ public class Stuscore {
 		this.avg = avg;
 	}
 
-
 	static int count;
 	private int no;
 	private String name;
@@ -35,14 +35,6 @@ public class Stuscore {
 	private int math;
 	private int total;
 	private double avg;
-	
-	public void calTotal() {
-		this.total = this.kor+this.eng+this.math;
-	}
-	
-	public void calAvg() {
-		this.avg = (this.kor+this.eng+this.math)/3.0;
-	}
 	
 	public int getNo() {
 		return no;
@@ -86,6 +78,5 @@ public class Stuscore {
 	public void setAvg(double avg) {
 		this.avg = avg;
 	}
-	
 	
 }
